@@ -1,0 +1,111 @@
+
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║           🎨 VISOR 3D ESTÁTICO - VERSIÓN SIMPLIFICADA               ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+✅ PROYECTO CONFIGURADO
+
+🎯 Visor 3D que carga automáticamente desde /public/app/model.glb
+📦 Sin inputs, sin uploads, solo visualización
+⚡ Optimizado para deployment estático
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 INICIO RÁPIDO (3 PASOS):
+
+   1️⃣  npm install
+   2️⃣  Colocar model.glb en public/app/
+   3️⃣  npm run dev
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📦 AGREGAR TU MODELO:
+
+   1. Renombra tu archivo 3D a: model.glb
+   2. Colócalo en: public/app/model.glb
+   3. Ejecuta: npm run dev
+   4. Abre: http://localhost:5173
+
+   O descarga modelo de prueba:
+   
+   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF-Binary/DamagedHelmet.glb" -OutFile "public/app/model.glb"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ CARACTERÍSTICAS:
+
+   ✅ Carga automática desde /app/model.glb
+   ✅ Sin inputs ni formularios
+   ✅ Compresión DRACO automática
+   ✅ Auto-fit de modelos
+   ✅ Controles orbitales
+   ✅ Responsivo (desktop + móvil)
+   ✅ Build estático listo para hosting
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🏗️ BUILD PARA PRODUCCIÓN:
+
+   npm run build
+
+   Resultado en /dist/:
+   
+   dist/
+     ├── index.html
+     ├── assets/
+     └── app/
+         └── model.glb
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 DEPLOY A kath-3d.chiqo.site:
+
+   1. npm run build
+   2. Sube contenido de /dist/ a tu servidor
+   3. Asegúrate que dist/app/model.glb está incluido
+   4. Accede a tu dominio
+
+   Ver DEPLOYMENT.md para instrucciones detalladas
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📂 ESTRUCTURA:
+
+   public/
+     └── app/
+         └── model.glb    ← Tu archivo aquí
+   
+   src/
+     ├── components/
+     │   ├── Viewer.tsx   ← Canvas 3D
+     │   └── Model.tsx    ← Carga de /app/model.glb
+     └── App.tsx          ← UI principal
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🛠️ STACK:
+
+   • React 18 + TypeScript
+   • Three.js + react-three-fiber
+   • @react-three/drei
+   • Vite
+   • DRACO compression
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 TIPS:
+
+   • Lee README.md para más detalles
+   • Modelo debe llamarse exactamente: model.glb
+   • Soporta archivos hasta 100MB
+   • Compatible con DRACO compression
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 ¡LISTO PARA USAR!
+
+Hecho con ❤️ usando React + Three.js
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
